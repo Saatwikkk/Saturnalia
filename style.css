@@ -1,22 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url(//db.onlinewebfonts.com/c/2c89eca877ffb0f22a0545301a99e53c?family=Ardela+Edge);
+@font-face {
+  font-family: Ardela Edge;
+  src: url("//db.onlinewebfonts.com/t/2c89eca877ffb0f22a0545301a99e53c.woff") format("woff");
+}
+
 body{
     background: black;
     font-family: 'Rubik Moonrocks', cursive;
     font-family: 'Ubuntu', sans-serif;
 }
-.sat-logo{
+body::before{
+    background: url(stars2.jpg);
+    content: "";
+    opacity: 0.75;
+}
+
+.logos{
     background: url(space.png);
     display: flex;
+    flex-direction: column;
     position: relative;
-    
 }
+.logos .hack-this-site{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  
+}
+.hack-this-site {
+  color: rgba(255, 247, 0, 0.863);
+  font-size: 40px;
+  font-weight: 800;
+  font-family: Ardela Edge;
+}
+
 .sat-logo .logo-height{
-    height: 200px;
+    height: 100px;
+}
+.content p{
+  display: flex;
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
 }
 .sat-logo img{
-    max-width: 100%;
+    max-width: 25%;
     height: auto;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -43,8 +80,6 @@ body{
     color: white;
     position:relative;
     margin-top: 40px;
-    border: 3px solid green ;
-    border-radius: 5px;
     text-align: center;
     font-size: 30px;
     padding: 15px;
@@ -112,9 +147,13 @@ footer {
   footer p {
     color: #999;
   }
+  .sec h3 {
+    color: white;
+  }
   
   .sci {
     display: flex;
+    justify-content: center;
     padding: 0;
   }
   
@@ -135,9 +174,6 @@ footer {
     border-radius: 4px;
   }
   
-  .sci li a:hover {
-    background: #db198a;
-  }
   
   .sci li a .fa {
     color: #fff;
@@ -317,8 +353,5 @@ footer {
 .fa-instagram {
   background: #125688;
   color: white;
-}
-@media screen {
-    
 }
 
